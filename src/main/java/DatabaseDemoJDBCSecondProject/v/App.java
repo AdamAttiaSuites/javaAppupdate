@@ -21,6 +21,12 @@ public class App
         }else {
 			System.out.println("Wrong Input, Tru=y Again!!");
 		}
+        getAge();
        
+    }
+    public static void getAge() {
+    	
+    	int age = 30;
+    	System.out.println("The age for new Employee is " + age);
     }
 }
