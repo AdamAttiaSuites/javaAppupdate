@@ -21,12 +21,25 @@ public class App
         }else {
 			System.out.println("Wrong Input, Tru=y Again!!");
 		}
-        getAge();
+        getName();
        
     }
     public static void getAge() {
     	
     	int age = 30;
     	System.out.println("The age for new Employee is " + age);
+    	
+    }
+    public static void getName() {
+    	
+    	Scanner scanner = new Scanner(System.in);
+    	System.out.println("The name of the employee:");
+    	String name = scanner.nextLine();
+    	if(name.equals("Steve")) {
+    		System.out.println(name+" is Correct");
+    		getAge();
+    	}else {
+			System.out.println("Wrong Name!! Try Again");
+		}
     }
 }
