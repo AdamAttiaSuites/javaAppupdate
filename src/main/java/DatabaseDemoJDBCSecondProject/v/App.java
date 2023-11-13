@@ -22,6 +22,7 @@ public class App
 			System.out.println("Wrong Input, Tru=y Again!!");
 		}
         getName();
+        getRightAge();
        
     }
     public static void getAge() {
@@ -40,6 +41,19 @@ public class App
     		getAge();
     	}else {
 			System.out.println("Wrong Name!! Try Again");
+		}
+    	
+    }
+    public static void getRightAge() {
+    	Scanner scanner = new Scanner(System.in);
+    	int n = 30;
+    	System.out.println("Enter the age you want to validate: ");
+    	int age = scanner.nextInt();
+    	
+    	if(age <= n) {
+    		System.out.println("You are legal! Yuou can go in");
+    	}else {
+		   System.out.println("Its not an Authorized age. Try again!");
 		}
     }
 }
