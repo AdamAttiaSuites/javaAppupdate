@@ -1,5 +1,6 @@
 package DatabaseDemoJDBCSecondProject.v;
 
+import java.io.NotActiveException;import java.security.cert.CertificateNotYetValidException;
 import java.util.Scanner;
 
 /**
@@ -24,6 +25,7 @@ public class App
         getName();
         getRightAge();
         gitMerge();
+        checkFizBuzz();
        
     }
     public static void getAge() {
@@ -63,5 +65,21 @@ public class App
     public static void gitMerge() {
     	System.out.println("After Switching to Develp Branche,"
     			+ " we did some changes and know we want to push it to Main Branche!");
+    }
+    
+    public static void checkFizBuzz() {
+    	Scanner scanner = new Scanner(System.in);
+    	System.out.println("Enter a number to check the test!");
+    	int num = scanner.nextInt();
+    	
+    	if((num % 3 ==0)&&(num % 5==0)) {
+    		System.out.println("FizBuzz!");
+    	}else if (num % 3 ==0) {
+    		System.out.println("Fizz!");
+    	}else if (num % 5 ==0) {
+    		System.out.println("Buzz!");
+    	}else {
+			System.out.println("Not a Valide Number!" );
+		}
     }
 }
