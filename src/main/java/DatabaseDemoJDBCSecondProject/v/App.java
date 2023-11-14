@@ -23,6 +23,7 @@ public class App
 		}
         getName();
         getRightAge();
+        gitMerge();
        
     }
     public static void getAge() {
@@ -58,5 +59,9 @@ public class App
     }
     public static void cretaeNewBranche() {
     	System.out.println("I ahve Created a new Branche!!");
+    }
+    public static void gitMerge() {
+    	System.out.println("After Switching to Develp Branche,"
+    			+ " we did some changes and know we want to push it to Main Branche!");
     }
 }
